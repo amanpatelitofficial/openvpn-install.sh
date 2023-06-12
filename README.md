@@ -2,6 +2,7 @@
 ### First, get the script and make it executable:
 
 > curl -O https://github.com/amanpatelitprofessional/openvpn-install.sh.git
+
 > chmod +x openvpn-install.sh
 
 ### Then run it:
