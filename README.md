@@ -67,12 +67,9 @@ It's also possible to automate the addition of a new user. Here, the key is to p
 
 The following Bash script adds a new user foo to an existing OpenVPN configuration
 
-#!/bin/bash
+> #!/bin/bash
+> export MENU_OPTION="1"
+> export CLIENT="foo"
+> export PASS="1"
 
-export MENU_OPTION="1"
-
-export CLIENT="foo"
-
-export PASS="1"
-
-./openvpn-install.sh
+> ./openvpn-install.sh
