@@ -34,14 +34,23 @@ Example usage:
 If you want to customise your installation, you can export them or specify them on the same line, as shown above.
 
 APPROVE_INSTALL=y
+
 APPROVE_IP=y
+
 IPV6_SUPPORT=n
+
 PORT_CHOICE=1
+
 PROTOCOL_CHOICE=1
+
 DNS=1
+
 COMPRESSION_ENABLED=n
+
 CUSTOMIZE_ENC=n
+
 CLIENT=clientname
+
 PASS=1
 
 If the server is behind NAT, you can specify its endpoint with the ENDPOINT variable. If the endpoint is the public IP address which it is behind, you can use ENDPOINT=$(curl -4 ifconfig.co) (the script will default to this). The endpoint can be an IPv4 or a domain.
@@ -59,7 +68,11 @@ It's also possible to automate the addition of a new user. Here, the key is to p
 The following Bash script adds a new user foo to an existing OpenVPN configuration
 
 #!/bin/bash
+
 export MENU_OPTION="1"
+
 export CLIENT="foo"
+
 export PASS="1"
+
 ./openvpn-install.sh
